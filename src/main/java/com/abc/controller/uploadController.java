@@ -10,6 +10,13 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * 开发步骤
+ * 1、导包>commons-fileupload
+ * 2、配置上传解析
+ * 3、controller上传
+ */
+
 @Controller
 public class uploadController {
 
