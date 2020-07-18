@@ -37,11 +37,11 @@ public class uploadController {
             ftp.connect("192.168.61.3",21);
             //匿名用户必须使用anonymous登录，密码是邮箱
             boolean login = ftp.login("anonymous", "1328662381@qq.com");
-            System.out.println(login);
+//            System.out.println(login);
 
             int replyCode = ftp.getReplyCode();
             if (!FTPReply.isPositiveCompletion(replyCode)) {
-                System.out.println("获取响应失败");
+//                System.out.println("获取响应失败");
                 jsonResult.setCode(1);
                 return jsonResult;
             }
